@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9262C692E7A877F00529840 /* KeHuaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9262C682E7A877F00529840 /* KeHuaApp.swift */; };
+		C9262C6B2E7A877F00529840 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9262C6A2E7A877F00529840 /* ContentView.swift */; };
+		C9262C6D2E7A877F00529840 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9262C6C2E7A877F00529840 /* Item.swift */; };
+		C9262C6F2E7A878000529840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9262C6E2E7A878000529840 /* Assets.xcassets */; };
+		C9262C722E7A878000529840 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9262C712E7A878000529840 /* Preview Assets.xcassets */; };
+		C9262C7C2E7A878000529840 /* KeHuaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9262C7B2E7A878000529840 /* KeHuaTests.swift */; };
+		C9262C862E7A878000529840 /* KeHuaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9262C852E7A878000529840 /* KeHuaUITests.swift */; };
+		C9262C882E7A878000529840 /* KeHuaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9262C872E7A878000529840 /* KeHuaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9262C782E7A878000529840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9262C5D2E7A877F00529840 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9262C642E7A877F00529840;
+			remoteInfo = KeHua;
+		};
+		C9262C822E7A878000529840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9262C5D2E7A877F00529840 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9262C642E7A877F00529840;
+			remoteInfo = KeHua;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9262C652E7A877F00529840 /* KeHua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeHua.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9262C682E7A877F00529840 /* KeHuaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeHuaApp.swift; sourceTree = "<group>"; };
+		C9262C6A2E7A877F00529840 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C9262C6C2E7A877F00529840 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C9262C6E2E7A878000529840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9262C712E7A878000529840 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9262C772E7A878000529840 /* KeHuaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeHuaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9262C7B2E7A878000529840 /* KeHuaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeHuaTests.swift; sourceTree = "<group>"; };
+		C9262C812E7A878000529840 /* KeHuaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeHuaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9262C852E7A878000529840 /* KeHuaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeHuaUITests.swift; sourceTree = "<group>"; };
+		C9262C872E7A878000529840 /* KeHuaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeHuaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9262C622E7A877F00529840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9262C742E7A878000529840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9262C7E2E7A878000529840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9262C5C2E7A877F00529840 = {
+			isa = PBXGroup;
+			children = (
+				C9262C672E7A877F00529840 /* KeHua */,
+				C9262C7A2E7A878000529840 /* KeHuaTests */,
+				C9262C842E7A878000529840 /* KeHuaUITests */,
+				C9262C662E7A877F00529840 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9262C662E7A877F00529840 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9262C652E7A877F00529840 /* KeHua.app */,
+				C9262C772E7A878000529840 /* KeHuaTests.xctest */,
+				C9262C812E7A878000529840 /* KeHuaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9262C672E7A877F00529840 /* KeHua */ = {
+			isa = PBXGroup;
+			children = (
+				C9262C682E7A877F00529840 /* KeHuaApp.swift */,
+				C9262C6A2E7A877F00529840 /* ContentView.swift */,
+				C9262C6C2E7A877F00529840 /* Item.swift */,
+				C9262C6E2E7A878000529840 /* Assets.xcassets */,
+				C9262C702E7A878000529840 /* Preview Content */,
+			);
+			path = KeHua;
+			sourceTree = "<group>";
+		};
+		C9262C702E7A878000529840 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C9262C712E7A878000529840 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9262C7A2E7A878000529840 /* KeHuaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9262C7B2E7A878000529840 /* KeHuaTests.swift */,
+			);
+			path = KeHuaTests;
+			sourceTree = "<group>";
+		};
+		C9262C842E7A878000529840 /* KeHuaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9262C852E7A878000529840 /* KeHuaUITests.swift */,
+				C9262C872E7A878000529840 /* KeHuaUITestsLaunchTests.swift */,
+			);
+			path = KeHuaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9262C642E7A877F00529840 /* KeHua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9262C8B2E7A878000529840 /* Build configuration list for PBXNativeTarget "KeHua" */;
+			buildPhases = (
+				C9262C612E7A877F00529840 /* Sources */,
+				C9262C622E7A877F00529840 /* Frameworks */,
+				C9262C632E7A877F00529840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeHua;
+			productName = KeHua;
+			productReference = C9262C652E7A877F00529840 /* KeHua.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9262C762E7A878000529840 /* KeHuaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9262C8E2E7A878000529840 /* Build configuration list for PBXNativeTarget "KeHuaTests" */;
+			buildPhases = (
+				C9262C732E7A878000529840 /* Sources */,
+				C9262C742E7A878000529840 /* Frameworks */,
+				C9262C752E7A878000529840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9262C792E7A878000529840 /* PBXTargetDependency */,
+			);
+			name = KeHuaTests;
+			productName = KeHuaTests;
+			productReference = C9262C772E7A878000529840 /* KeHuaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9262C802E7A878000529840 /* KeHuaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9262C912E7A878000529840 /* Build configuration list for PBXNativeTarget "KeHuaUITests" */;
+			buildPhases = (
+				C9262C7D2E7A878000529840 /* Sources */,
+				C9262C7E2E7A878000529840 /* Frameworks */,
+				C9262C7F2E7A878000529840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9262C832E7A878000529840 /* PBXTargetDependency */,
+			);
+			name = KeHuaUITests;
+			productName = KeHuaUITests;
+			productReference = C9262C812E7A878000529840 /* KeHuaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9262C5D2E7A877F00529840 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C9262C642E7A877F00529840 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					C9262C762E7A878000529840 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = C9262C642E7A877F00529840;
+					};
+					C9262C802E7A878000529840 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = C9262C642E7A877F00529840;
+					};
+				};
+			};
+			buildConfigurationList = C9262C602E7A877F00529840 /* Build configuration list for PBXProject "KeHua" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9262C5C2E7A877F00529840;
+			productRefGroup = C9262C662E7A877F00529840 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9262C642E7A877F00529840 /* KeHua */,
+				C9262C762E7A878000529840 /* KeHuaTests */,
+				C9262C802E7A878000529840 /* KeHuaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9262C632E7A877F00529840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9262C722E7A878000529840 /* Preview Assets.xcassets in Resources */,
+				C9262C6F2E7A878000529840 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9262C752E7A878000529840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9262C7F2E7A878000529840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9262C612E7A877F00529840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9262C6B2E7A877F00529840 /* ContentView.swift in Sources */,
+				C9262C6D2E7A877F00529840 /* Item.swift in Sources */,
+				C9262C692E7A877F00529840 /* KeHuaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9262C732E7A878000529840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9262C7C2E7A878000529840 /* KeHuaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9262C7D2E7A878000529840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9262C862E7A878000529840 /* KeHuaUITests.swift in Sources */,
+				C9262C882E7A878000529840 /* KeHuaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9262C792E7A878000529840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9262C642E7A877F00529840 /* KeHua */;
+			targetProxy = C9262C782E7A878000529840 /* PBXContainerItemProxy */;
+		};
+		C9262C832E7A878000529840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9262C642E7A877F00529840 /* KeHua */;
+			targetProxy = C9262C822E7A878000529840 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C9262C892E7A878000529840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9262C8A2E7A878000529840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9262C8C2E7A878000529840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeHua/Preview Content\"";
+				DEVELOPMENT_TEAM = R72TTR43F9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cxx.kehua.KeHua;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9262C8D2E7A878000529840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeHua/Preview Content\"";
+				DEVELOPMENT_TEAM = R72TTR43F9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cxx.kehua.KeHua;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C9262C8F2E7A878000529840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cxx.kehua.KeHuaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeHua.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeHua";
+			};
+			name = Debug;
+		};
+		C9262C902E7A878000529840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cxx.kehua.KeHuaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeHua.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeHua";
+			};
+			name = Release;
+		};
+		C9262C922E7A878000529840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cxx.kehua.KeHuaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeHua;
+			};
+			name = Debug;
+		};
+		C9262C932E7A878000529840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cxx.kehua.KeHuaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeHua;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9262C602E7A877F00529840 /* Build configuration list for PBXProject "KeHua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9262C892E7A878000529840 /* Debug */,
+				C9262C8A2E7A878000529840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9262C8B2E7A878000529840 /* Build configuration list for PBXNativeTarget "KeHua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9262C8C2E7A878000529840 /* Debug */,
+				C9262C8D2E7A878000529840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9262C8E2E7A878000529840 /* Build configuration list for PBXNativeTarget "KeHuaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9262C8F2E7A878000529840 /* Debug */,
+				C9262C902E7A878000529840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9262C912E7A878000529840 /* Build configuration list for PBXNativeTarget "KeHuaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9262C922E7A878000529840 /* Debug */,
+				C9262C932E7A878000529840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9262C5D2E7A877F00529840 /* Project object */;
+}
