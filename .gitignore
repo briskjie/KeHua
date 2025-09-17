@@ -1,0 +1,16 @@
+# macOS系统文件
+.DS_Store
+
+# Xcode用户数据
+xcuserdata/
+*.xcuserstate
+*.xcbkptlist
+
+# 构建目录
+build/
+DerivedData/
+
+# 其他开发环境文件
+*.swp
+*.back
+*.orig
