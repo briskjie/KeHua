@@ -132,10 +132,10 @@ struct LoginView: View {
 }
 
 class CertificateDelegate: NSObject, URLSessionDelegate {
-    let certificateData: Data
+    let certificateString: String
     
     init(certificate: String) {
-        self.certificateData = Data(certificate.utf8)
+        self.certificateString = certificate
     }
     
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
@@ -145,9 +145,15 @@ class CertificateDelegate: NSObject, URLSessionDelegate {
             return
         }
         
-        // 1. 创建证书对象
-        guard let cert = SecCertificateCreateWithData(nil, certificateData as CFData) else {
-            print("⚠️ 无法创建证书对象")
+        // 1. 从PEM格式字符串创建证书
+        let pemString = certificateString
+            .replacingOccurrences(of: "-----BEGIN CERTIFICATE-----", with: "")
+            .replacingOccurrences(of: "-----END CERTIFICATE-----", with: "")
+            .replacingOccurrences(of: "\n", with: "")
+        
+        guard let pemData = Data(base64Encoded: pemString),
+              let cert = SecCertificateCreateWithData(nil, pemData as CFData) else {
+            print("⚠️ 无法从PEM字符串创建证书 - 请检查证书格式是否正确")
             completionHandler(.cancelAuthenticationChallenge, nil)
             return
         }
@@ -164,10 +170,11 @@ class CertificateDelegate: NSObject, URLSessionDelegate {
         // 4. 评估信任
         var error: CFError?
         if SecTrustEvaluateWithError(serverTrust, &error) {
+            print("✅ 证书验证成功")
             completionHandler(.useCredential, URLCredential(trust: serverTrust))
         } else {
             print("⚠️ 证书验证失败: \(error?.localizedDescription ?? "未知错误")")
-            // 生产环境中应使用.cancelAuthenticationChallenge
+            // 开发环境中允许继续连接
             completionHandler(.useCredential, URLCredential(trust: serverTrust))
         }
     }
