@@ -10,6 +10,8 @@ import SwiftData
 
 @main
 struct KeHuaApp: App {
+    @StateObject private var appState = AppState()
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,8 +27,16 @@ struct KeHuaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if appState.isLoggedIn {
+                ContentView()
+            } else {
+                LoginView(isLoggedIn: $appState.isLoggedIn)
+            }
         }
         .modelContainer(sharedModelContainer)
     }
+}
+
+class AppState: ObservableObject {
+    @Published var isLoggedIn = false
 }

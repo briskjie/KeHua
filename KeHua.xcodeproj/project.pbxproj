@@ -15,6 +15,10 @@
 		C9262C7C2E7A878000529840 /* KeHuaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9262C7B2E7A878000529840 /* KeHuaTests.swift */; };
 		C9262C862E7A878000529840 /* KeHuaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9262C852E7A878000529840 /* KeHuaUITests.swift */; };
 		C9262C882E7A878000529840 /* KeHuaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9262C872E7A878000529840 /* KeHuaUITestsLaunchTests.swift */; };
+		C99ED3A82E7A9317003CD552 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = C99ED3A72E7A9317003CD552 /* Contents.json */; };
+		C99ED3AA2E7A931E003CD552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99ED3A92E7A931E003CD552 /* Assets.xcassets */; };
+		C99ED3AC2E7A9327003CD552 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99ED3AB2E7A9327003CD552 /* LoginView.swift */; };
+		C99ED3B22E7A9A0F003CD552 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C99ED3B12E7A9A0F003CD552 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		C9262C812E7A878000529840 /* KeHuaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeHuaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9262C852E7A878000529840 /* KeHuaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeHuaUITests.swift; sourceTree = "<group>"; };
 		C9262C872E7A878000529840 /* KeHuaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeHuaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C99ED3A72E7A9317003CD552 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/AccentColor.colorset/Contents.json; sourceTree = "<group>"; };
+		C99ED3A92E7A931E003CD552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C99ED3AB2E7A9327003CD552 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C99ED3B12E7A9A0F003CD552 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				C9262C682E7A877F00529840 /* KeHuaApp.swift */,
+				C99ED3AB2E7A9327003CD552 /* LoginView.swift */,
+				C99ED3B12E7A9A0F003CD552 /* Info.plist */,
+				C99ED3A92E7A931E003CD552 /* Assets.xcassets */,
+				C99ED3A72E7A9317003CD552 /* Contents.json */,
 				C9262C6A2E7A877F00529840 /* ContentView.swift */,
 				C9262C6C2E7A877F00529840 /* Item.swift */,
 				C9262C6E2E7A878000529840 /* Assets.xcassets */,
@@ -236,6 +248,8 @@
 			files = (
 				C9262C722E7A878000529840 /* Preview Assets.xcassets in Resources */,
 				C9262C6F2E7A878000529840 /* Assets.xcassets in Resources */,
+				C99ED3AA2E7A931E003CD552 /* Assets.xcassets in Resources */,
+				C99ED3A82E7A9317003CD552 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +276,7 @@
 			files = (
 				C9262C6B2E7A877F00529840 /* ContentView.swift in Sources */,
 				C9262C6D2E7A877F00529840 /* Item.swift in Sources */,
+				C99ED3AC2E7A9327003CD552 /* LoginView.swift in Sources */,
 				C9262C692E7A877F00529840 /* KeHuaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

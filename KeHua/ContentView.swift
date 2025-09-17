@@ -11,6 +11,7 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
+    @EnvironmentObject private var appState: AppState
 
     var body: some View {
         NavigationSplitView {
@@ -26,7 +27,9 @@ struct ContentView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                    Button("登出") {
+                        appState.isLoggedIn = false
+                    }
                 }
                 ToolbarItem {
                     Button(action: addItem) {
