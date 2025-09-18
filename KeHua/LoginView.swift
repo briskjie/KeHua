@@ -77,22 +77,23 @@ struct LoginView: View {
         // 配置自定义证书
         let certificate = """
         -----BEGIN CERTIFICATE-----
-        MIIC6TCCAdGgAwIBAgIJAMfyOEsZi2MoMA0GCSqGSIb3DQEBDAUAMBQxEjAQBgNV
-        BAMTCWxvY2FsaG9zdDAeFw0yNTA4MzAwMzU5MDhaFw0zNTA4MjgwMzU5MDhaMBQx
-        EjAQBgNVBAMTCWxvY2FsaG9zdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
-        ggEBAPA7DWkpz6GxD9UGYUFdaTm3wncrMx6kQOV6BQ7wMdlJ0Afil+2Lf74Kxveh
-        PFZcIoXRJcj9deuDi03hyD9VFnSZlHhLkWqg+UKqB09rw9LdxBhEwCUOjMsmWlx6
-        LdVbd9ttsZ6XXyAAPyQOS8+0vQqpCZFt9HYUZHv6uC/7GSKEX6ig2leIMKUdnnKX
-        BAtWSTF+6kgoSrStm6H4K6aNKEJbgNSCEo84cSCoERI2jL8opmqY8/Z/Mfdl7s9q
-        AWwiKL1Q7z5TMdXuXkJSBwZ3Hqdiqz7HhKUUqC8VnRT8/JuD43GSM/0BVUJG18Kx
-        h0v6DznkqZ9hj7kkHJZCUdKUSlUCAwEAAaM+MDwwHQYDVR0OBBYEFMfOx1uS1Oxs
-        g0psv5iIEfAcfNFiMBsGA1UdEQQUMBKHBMCoAr+HBKwa4WSHBHgwGT4wDQYJKoZI
-        hvcNAQEMBQADggEBAOdg1vVuNaBqv+5GNcQ9BLPpqPfWQ3XM39e3E1nrK/3gApb/
-        jx1kw6oQQ77oi00zl4cKQwGYIhFr8ELG75jbFlgkIYuIqy4hGHhRjmjyhswGGnRt
-        WKszVAv7eD6GCyDw15cGhhmCHcsxBgvByJT5VRyYP7jio9rW5QPvQcKkNCLZF9Lx
-        MGHryudW3c0tETXUvtsHOhmkJnw4nDEM2Xjnlh66WL3j6SgnDBZWtoTDW6BtkpPz
-        Nt2HmONSVvF/wYuFd52Swt8Zpnl6GuwqOPt45KmNMTmzJe+Cnbt+ckOLjRJmnSSX
-        /VWTVGTbuafuvSaFrXzTdzuTRtGgYGTa2QJSS5o=
+        MIIDITCCAgmgAwIBAgIUHaRxTQ7qzOErmAE8egBEkOcFxOkwDQYJKoZIhvcNAQEL
+        BQAwGDEWMBQGA1UEAwwNS2VIdWEgUm9vdCBDQTAeFw0yNTA5MTgwODI4MjZaFw00
+        NTA5MTMwODI4MjZaMBgxFjAUBgNVBAMMDUtlSHVhIFJvb3QgQ0EwggEiMA0GCSqG
+        SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCFAl0W8EL6eV1P3alxw8FG2hI6RhkGPBUk
+        WvFwZK4eT1iihvwqHWeTFoPoNeElQj7cE4aeWGSCMOoNTcJlBuCbSLbX2C99CJ50
+        cpbziHmMgokr9JO2+4EtyaZKzgXEUhNNxSac4gLtaaq+g5XiffVH8WAcyDxrJ/W2
+        QemyoLm0Te7vCfgeS/KeMGRFIAht1pnoqPhKlvSMTWEyGgNBLJz3vul+PA2y7cwY
+        RbtXdA2NSpNjFCDfmlc/Unq0J7ot5/JuN3t31J6VCjnoX5HdpdmtXrPUvSJ7HSjt
+        RYzyGIjcn/zWMaERSDZQU2XKGcPH+j7dRgVCN5bjIXMvcWTQmQrvAgMBAAGjYzBh
+        MB0GA1UdDgQWBBTuudHXlKM4CPRQ2Gc32zXHhPeyZjAfBgNVHSMEGDAWgBTuudHX
+        lKM4CPRQ2Gc32zXHhPeyZjAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIB
+        BjANBgkqhkiG9w0BAQsFAAOCAQEAD0lIORSn2nNluGcRpMzbJtCcgBiiI/UuOmSe
+        PV5RbKloah/YZdjChKRyi1szKTUnpp6SfJS3eJSLRozzJI3POpqUYnmba+xB9EBP
+        D0mLtUoNX5JBJFAfEtHo+2lKepZxkq8044x8VTOprACG7NXJJPkeDR0oceK/h6dP
+        RwEDav+uYB8Pd2KvI5plXYhFTkTXfYv5FEdc/5gYCbzCYGT2FWWImHNMlzsI9xC8
+        9QuX6D82/t1JaSrvLpSw2Kht2sa7tWKmtrL+xqF1EotMWwPhi++zVodwAwyiYVbc
+        EqsfW7Chzt56zbsyMaMNfVveUFqHEtkzdq9aUtD0t1bUPCt5/A==
         -----END CERTIFICATE-----
         """
         
@@ -139,43 +140,67 @@ class CertificateDelegate: NSObject, URLSessionDelegate {
     }
     
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        print("🔍 收到认证挑战: \(challenge.protectionSpace.host)")
+        
         guard challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust,
               let serverTrust = challenge.protectionSpace.serverTrust else {
+            print("⚠️ 非服务器信任挑战或无效的serverTrust")
             completionHandler(.performDefaultHandling, nil)
             return
         }
         
-        // 1. 从PEM格式字符串创建证书
+        // 1. 打印服务器证书信息
+        printServerCertificateInfo(serverTrust)
+        
+        // 2. 从PEM格式字符串创建证书
         let pemString = certificateString
             .replacingOccurrences(of: "-----BEGIN CERTIFICATE-----", with: "")
             .replacingOccurrences(of: "-----END CERTIFICATE-----", with: "")
             .replacingOccurrences(of: "\n", with: "")
         
-        guard let pemData = Data(base64Encoded: pemString),
-              let cert = SecCertificateCreateWithData(nil, pemData as CFData) else {
-            print("⚠️ 无法从PEM字符串创建证书 - 请检查证书格式是否正确")
+        guard let pemData = Data(base64Encoded: pemString) else {
+            print("❌ 无法将PEM字符串转换为Data - 请检查Base64编码")
             completionHandler(.cancelAuthenticationChallenge, nil)
             return
         }
         
-        // 2. 设置信任策略
+        guard let cert = SecCertificateCreateWithData(nil, pemData as CFData) else {
+            print("❌ 无法从PEM数据创建证书对象")
+            completionHandler(.cancelAuthenticationChallenge, nil)
+            return
+        }
+        
+        // 3. 设置信任策略
         let policies = NSMutableArray()
         policies.add(SecPolicyCreateSSL(true, challenge.protectionSpace.host as CFString))
         SecTrustSetPolicies(serverTrust, policies)
         
-        // 3. 设置锚点证书
+        // 4. 设置锚点证书
         SecTrustSetAnchorCertificates(serverTrust, [cert] as CFArray)
         SecTrustSetAnchorCertificatesOnly(serverTrust, true)
         
-        // 4. 评估信任
+        // 5. 评估信任
         var error: CFError?
         if SecTrustEvaluateWithError(serverTrust, &error) {
-            print("✅ 证书验证成功")
+            print("✅ 证书验证成功 - 允许连接")
             completionHandler(.useCredential, URLCredential(trust: serverTrust))
         } else {
             print("⚠️ 证书验证失败: \(error?.localizedDescription ?? "未知错误")")
-            // 开发环境中允许继续连接
+            print("⚠️ 开发环境中允许继续连接")
             completionHandler(.useCredential, URLCredential(trust: serverTrust))
+        }
+    }
+    
+    private func printServerCertificateInfo(_ trust: SecTrust) {
+        let count = SecTrustGetCertificateCount(trust)
+        print("🔐 服务器提供了 \(count) 个证书")
+        
+        for i in 0..<count {
+            if let cert = SecTrustGetCertificateAtIndex(trust, i) {
+                var commonName: CFString?
+                SecCertificateCopyCommonName(cert, &commonName)
+                print("  证书 #\(i+1): \(commonName as String? ?? "无CN")")
+            }
         }
     }
 }
